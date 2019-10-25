@@ -4,7 +4,6 @@
 
 <center>"Artweek과 함께하는 예술적인 일주일"</center>
 
-
 <p align="center">
   <img src="http://img.shields.io/:license-mit-green.svg"/>
   <img src="https://img.shields.io/badge/platform-bixby-blue.svg"/>
@@ -35,7 +34,7 @@ Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐
 
 6. [UI&UX(Layout)](#UI&UX(Layout))
 
-8. [AWS 서버와 외부 DB](#AWS 서버와 외부 DB) 
+8. [AWS 서버와 외부 DB](#AWS 서버와 외부 DB)
 
 11. [부록](#부록)
 
