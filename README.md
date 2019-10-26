@@ -2,8 +2,9 @@
 
 ![Artweeklogo](images/Artweeklogo.png)
 
-<center>"Artweek과 함께하는 예술적인 일주일"</center>
-
+<p align="center">
+"Artweek과 함께하는 예술적인 일주일"
+</p>
 <p align="center">
   <img src="http://img.shields.io/:license-mit-green.svg"/>
   <img src="https://img.shields.io/badge/platform-bixby-blue.svg"/>
@@ -11,14 +12,6 @@
 </p>
 
 
-
-Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐길 수 있도록 영감을 제공합니다.
-
-
-
-이용 중 문의사항이 있으신 경우 하기 e-mail 로 연락바랍니다.
-
-:e-mail: makeartweek@google.com
 
 ## 목차
 
@@ -36,17 +29,20 @@ Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐
 
 8. [AWS 서버와 외부 DB](#)
 
-11. [부록](#부록)
+8. [HTTP 요청](#HTTP 요청)
 
-    
+9. [부록](#부록)
+
+     
 
 
 ## 아트위크란?
 
-> 아트위크 캡슐을 통해 오프라인 문화생활 정보를 확인할 수 있습니다. 오프라인  문화생활 정보를 아트위크 캡슐이 대신 찾아줍니다. 
+Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐길 수 있도록 영감을 제공합니다.
 
+아트위크 캡슐은 오프라인 문화생활 정보를 사용자 대신 찾아줍니다. 이용 중 문의사항이 있으신 경우 e-mail로 연락바랍니다.
 
-
+<p align="center">makeartweek@gmail.com</p>
 ## 캡슐구조
 
 ### models
@@ -99,13 +95,19 @@ Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐
        └── Point.model.bxb
 ```
 
+모델은 크게 `actions` 와 `concepts` 두 폴더로 구성되어 있습니다.
 
+#### actions
 
-> `actions`폴더에는 ? 병합 후 작성
+`actions`폴더는 `GetCurrentPosition`, `SearchByLocation`, `SearchEvent` 으로 구성되어 있습니다.
+
+#### concepts
 
 `concepts`폴더는 `Primitive`와 `Structure` 두 폴더로 나누어 구성하였습니다.
 
 `Primitive`폴더에는 `Structure`에 해당하는 `Event`, `Place`, `Time`, `signal`들을 생성하여 관리함으로써 structure concept와 primitive concept의 구분을 명확히 하였습니다. 
+
+
 
 ### resources
 
@@ -150,7 +152,7 @@ Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐
 
 ## 캡슐설정
 
-`hints`
+아트위크 캡슐의 대표발화는 아래와 같이 `hints` 파일에 저장하였습니다. 이를 통해 사용자는 의도에 맞게 대표 발화를 다양화하여 원하는 오프라인 문화 생활 정보를 제공 받을 수 있습니다. 
 
 ```js
 hints {
@@ -221,40 +223,77 @@ vocab(SearchKeyword) {
 
 ## 발화(Training)
 
-**사용자 현재 위치 중심으로 검색하기** 
+
+
+> **사용자 현재 위치 중심으로 검색하기** 
+
 사용자 질의:
 근처에서 하는 연극 알려줘 
 
 정보 제공:
-‘사용자의 현재 위치’에서 5킬로 내에 하는 연극 정보 제공
+`사용자의 현재 위치`에서 5키로 내에 하는 연극 정보 제공
 
-**특정 장소 중심으로 검색하기**
+
+
+> **특정 장소 중심으로 검색하기**
+
 사용자 질의:
 강남역/강남 근처에서 하는 전시 알려줘 
 
 정보 제공:
-‘강남역/강남의 중심에서 5킬로 내에 하는 전시 정보 제공
+`강남역/강남의 centroid`에서 5키로 내에 하는 전시 정보 제공
 
-**특정 일정을 중심으로 검색하기**
+
+
+> **특정 일정을 중심으로 검색하기**
+
 사용자 질의:
 이번 주/이번 달/오늘 하는 콘서트 알려줘
 
 정보 제공:
-‘특정 일정’에 해당하는 콘서트 정보 제공
+`특정 일정`에 해당하는 콘서트 정보 제공
 
-**특정 타입을 중심으로 검색하기**
+
+
+> **특정 타입을 중심으로 검색하기**
+
 사용자 질의:
 콘서트/연극/뮤지컬/전시 알려줘
 
 정보 제공:
-‘특정 타입’에 해당하는 정보 제공
+`특정 타입`에 해당하는 정보 제공
 
-**행사 제목을 중심으로 검색하기**
+
+
+> **행사 제목을 중심으로 검색하기**
+
 사용자 질의:
 헤드윅 뮤지컬 정보 알려줘
 
 정보 제공:
-‘행사 제목’에 해당하는 정보 제공
+`행사 제목`에 해당하는 정보 제공
+
+
+
+> **출연진 을 중심으로 검색하기**
+
+사용자 질의:
+양희철이 노래 부르는 콘서트 알려줘
+
+정보 제공:
+`양희철` 가 출연하는 정보 제공
+
+
+
+
+> **제작진 을 중심으로 검색하기**
+
+사용자 질의:
+이인동이 제작한 연극 알려줘
+
+정보 제공:
+`이인동` 이 제작한 정보 제공
+
 
 
 
@@ -264,9 +303,13 @@ vocab(SearchKeyword) {
 
 Layout은 총 view와 view에서 사용 가능한 macro로 구성되어있습니다.
 
+
+
 ### View
 
 view는 `InfoSearchState` 와 `NearsearchState` 를 사용하였습니다.
+
+
 
 
 ### Macro
@@ -319,9 +362,46 @@ AWS에서 제공하는 API Gateway와 Lambda 함수를 이용하여 DB에서 정
 
 
 
-아트위크의 DB는 하기 사진과 같이 1:N의 관계로 구성되어있습니다. 즉, 6개의 Event type과 이를 연결하는 1개의 Main location이 존재합니다.
+아트위크의 DB는 상기 사진과 같이 1:N의 관계로 구성되어 있습니다. 즉, 6개의 Event type과 이를 연결하는 1개의 Main location이 존재합니다.
 
-공연 종류에 따라서 Table을 나누어서 원하는 종류의 공연이 아닌 타 종류의 공연은 검색대상에서 제외함으로써 검색속도를 증가시켰습니다.
+공연 종류에 따라서 Table을 나누어서 원하는 종류의 공연이 아닌 타 종류의 공연은 검색대상에서 제외함으로써 검색속도가 향상되었습니다.
+
+
+
+## HTTP 요청
+
+외부 DB에서 빅스비 스튜디오로 데이터를 불러오기 위해서는 아트위크의 API에 http 요청을 실행해야 합니다. 이를 위해서 빅스비에서 사용할 수 있는 `JavaScript API Reference` 중 `config`와 `http`를 활용합니다.
+
+`config`는 capsule.properties나 Config & Secrets와 같은 캡슐의 configuration에 접근하도록 허용합니다.
+
+```javascript
+## capsule.properties
+
+config.default.remote.url=#기본 URL
+```
+
+다음과 같이 capsule.properties의 config.default.remote.url 변수에 기본 url을 저장해놓습니다. 이러한 과정을 통해 js코드 작성 시 `config.get()` 함수의 인자에 "remote.url"을 할당함으로써 이를 호출할 수 있게 됩니다.
+
+
+
+다음으로, http 요청을 위해 remote.url에 사용자에게 제공받은 검색 정보를 추가해야 합니다.
+
+```javascript
+  let options = {
+    query: {
+      title: title,
+      performer: performer,
+      ... ,
+      location: location,
+    },
+    format: "json"
+  };
+
+  console.log(options)
+  var db = http.getUrl(config.get("remote.url"), options);
+```
+
+이처럼 비즈니스 로직에서 정제된 데이터를 object 타입의 쿼리로 구성합니다. 이를 `http`의 `getUrl()` 함수를 사용해  API에서 json 포맷의 데이터를 get 요청으로 호출하였습니다.
 
 
 
