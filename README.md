@@ -29,7 +29,7 @@
 
 8. [AWS 서버와 외부 DB](#)
 
-8. [HTTP 요청](#HTTP 요청)
+8. [HTTP 요청](#)
 
 9. [부록](#부록)
 
@@ -161,16 +161,18 @@ Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐
 
 ```js
 hints {
-uncategorized {
-  hint (아트위크에서, 강남역에서 가까운 전시 보여줘)
-  hint (아트위크에서, 아이유 콘서트 정보 좀 찾아줘)
-  hint (아트위크에서, 송광일 나오는 연극 알려줘)
-  hint (아트위크에서, 주변에 뭐 있어?)
-  hint (아트위크에서, 내 근처에서 하는 콘서트 알려줘)
-  hint (아트위크에서, 연말에 하는 공연 좀 알려줄 수 있어?)
-  hint (아트위크에서, 뮤지컬 맘마미아 보여줘)
-  hint (아트위크에서, 주변에서 하는 연극 뭐 있어?)
-}
+ uncategorized {
+   hint (아트위크에서, 강남역에서 가까운 전시 보여줘) {
+    preferred-hint (강남역에서 가까운 전시 보여줘)
+   }
+   hint (아트위크에서, 아이유 콘서트 정보 좀 찾아줘) {
+     preferred-hint (아이유 콘서트 정보 좀 찾아줘)
+   }
+   hint (아트위크에서, 10월에 하는 전시회 정보 알려줘){
+     preferred-hint (10월에 하는 전시회 정보 알려줘)
+   }
+	...
+ }
 }
 ```
 
@@ -410,6 +412,12 @@ config.default.remote.url=#기본 URL
 
 
 ## 부록
+
+- 개발자 환경에서 테스트하는 방법
+
+   [On-device-testing-ko-kr](#)
+
+
 
 ![Artweeklogo2](images/Artweeklogo2.png)
 
