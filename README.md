@@ -27,9 +27,9 @@
 
 6. [UI&UX(Layout)](#UI&UX(Layout))
 
-8. [AWS 서버와 외부 DB](#)
+8. [AWS 서버와 외부 DB](#AWS-서버와-외부-DB)
 
-8. [HTTP 요청](#)
+8. [HTTP 요청](#HTTP-요청)
 
 9. [부록](#부록)
 
@@ -43,7 +43,6 @@ Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐
 아트위크 캡슐은 오프라인 문화생활 정보를 사용자 대신 찾아줍니다. 이용 중 문의사항이 있으신 경우 e-mail로 연락바랍니다.
 
 <p align="center">makeartweek@gmail.com</p>
-
 
 ## 캡슐구조
 
@@ -417,7 +416,11 @@ config.default.remote.url=#기본 URL
 
 - 개발자 환경에서 테스트하는 방법
 
-   [On-device-testing-ko-kr](#)
+   [On-device-testing-ko-kr](#https://github.com/makeartweek/bixby/blob/master/On-device-testing-ko-kr.md)
+   
+- 개인정보처리방침
+
+   [privacy-policy](#https://github.com/makeartweek/bixby/tree/master/Privacy-policy)
 
 
 
