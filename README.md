@@ -43,6 +43,8 @@ Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐
 아트위크 캡슐은 오프라인 문화생활 정보를 사용자 대신 찾아줍니다. 이용 중 문의사항이 있으신 경우 e-mail로 연락바랍니다.
 
 <p align="center">makeartweek@gmail.com</p>
+
+
 ## 캡슐구조
 
 ### models
