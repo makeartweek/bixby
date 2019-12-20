@@ -31,9 +31,11 @@
 
 8. [HTTP 요청](#HTTP-요청)
 
-9. [부록](#부록)
+9. [on Marketplace!](#On Marketplace!)
 
-     
+10. [부록](#부록)
+
+       
 
 
 ## 아트위크란?
@@ -43,7 +45,6 @@ Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐
 아트위크 캡슐은 오프라인 문화생활 정보를 사용자 대신 찾아줍니다. 이용 중 문의사항이 있으신 경우 e-mail로 연락바랍니다.
 
 <p align="center">makeartweek@gmail.com</p>
-
 ## 캡슐구조
 
 ### models
@@ -411,6 +412,16 @@ config.default.remote.url=#기본 URL
 
 
 
+## :star: On Marketplace!
+
+빅스비 마켓플레이스에서 `아트위크`를 만나보실 수 있습니다!
+
+
+
+![07_released](README.assets/07_released.png)
+
+
+
 
 ## 부록
 
@@ -421,6 +432,10 @@ config.default.remote.url=#기본 URL
 - 개인정보처리방침
 
    [privacy-policy](#https://github.com/makeartweek/bixby/tree/master/Privacy-policy)
+
+- 삼성전자 무선사업부
+
+![image-20191220102938725](README.assets/image-20191220102938725.png)
 
 
 
