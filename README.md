@@ -27,15 +27,19 @@
 
 6. [UI&UX(Layout)](#UI&UX(Layout))
 
-8. [AWS 서버와 외부 DB](#AWS-서버와-외부-DB)
+7. [구매페이지](#구매페이지)
 
-8. [HTTP 요청](#HTTP-요청)
+8. [Heroku 서버와 Django orm](#Heroku-서버와-Django-orm)
 
-9. [on Marketplace!](#On-Marketplace!)
+9. [AWS 서버와 외부 DB](#AWS-서버와-외부-DB)
 
-10. [부록](#부록)
+10. [HTTP 요청](#HTTP-요청)
 
-       
+11. [on Marketplace!](#On-Marketplace!)
+
+12. [부록](#부록)
+
+    ​     
 
 
 ## 아트위크란?
@@ -45,7 +49,6 @@ Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐
 아트위크 캡슐은 오프라인 문화생활 정보를 사용자 대신 찾아줍니다. 이용 중 문의사항이 있으신 경우 e-mail로 연락바랍니다.
 
 <p align="center">makeartweek@gmail.com</p>
-
 
 ## 캡슐구조
 
@@ -338,8 +341,19 @@ view의 효율성을 위해서 macro로 `EventOneImage`, `EventSummary`, `LocDet
 
 
 
+## 구매페이지
 
-## AWS 서버와 외부 DB
+사용자 편의를 위하여 `멜론`, `예스24`, `인터파크` 등의 티켓 정보가 있는 경우, 이를 상세페이지에서 확인할 수 있도록 구매페이지 기능을 추가하였습니다.
+
+
+
+## Heroku 서버와 Django orm (ver 1.2.6.)
+
+AWS 서버 비용 부담 해소 및 아트위크팀은 Heroku로 서버를 이동하고, `django` orm을 이용하여 DB모델을 구축하였고,  REST API 또한 구축하여 언제 어디서든 API실행으로 실시간 DB 갱신이 가능하도록 업데이트 하였습니다.
+
+
+
+## AWS 서버와 외부 DB (ver 1.2.5.)
 
 ### Flow
 
