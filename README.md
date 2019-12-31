@@ -49,7 +49,6 @@ Artweek 팀은 사용자가 오프라인 문화생활을 더욱 편리하게 즐
 아트위크 캡슐은 오프라인 문화생활 정보를 사용자 대신 찾아줍니다. 이용 중 문의사항이 있으신 경우 e-mail로 연락바랍니다.
 
 <p align="center">makeartweek@gmail.com</p>
-
 ## 캡슐구조
 
 ### models
@@ -349,7 +348,7 @@ view의 효율성을 위해서 macro로 `EventOneImage`, `EventSummary`, `LocDet
 
 ## Heroku 서버와 Django orm (ver 1.2.6.)
 
-AWS 서버 비용 부담 해소 및 아트위크팀은 Heroku로 서버를 이동하고, `django` orm을 이용하여 DB모델을 구축하였고,  REST API 또한 구축하여 언제 어디서든 API실행으로 실시간 DB 갱신이 가능하도록 업데이트 하였습니다.
+아트위크팀은 AWS 서버에서 Heroku 서버로 이동하며 서버 비용을 해소하였습니다. 또한, `django` orm을 이용하여 DB모델 구축 그리고 REST API 또한 구축하여 언제 어디서든 API실행으로 실시간 DB 갱신이 가능하도록 업데이트 하였습니다.
 
 
 
