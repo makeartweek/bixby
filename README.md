@@ -3,7 +3,7 @@
 ![Artweeklogo](images/Artweeklogo.png)
 
 <p align="center">
-"Artweek과 함께하는 예술적인 일주일"
+"Artweek와 함께하는 예술적인 일주일"
 </p>
 <p align="center">
   <img src="http://img.shields.io/:license-mit-green.svg"/>
